@@ -1,0 +1,4 @@
+# Skill test runs and packaged builds
+*-workspace/
+*.skill
+.DS_Store

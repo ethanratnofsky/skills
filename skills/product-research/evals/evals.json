@@ -1,0 +1,29 @@
+{
+  "skill_name": "product-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I fly a lot for work and want new noise-cancelling headphones. Over-ear, under $400.",
+      "expected_output": "Asks one batch of questions only if needed (e.g. region, phone platform, call use), then gives a top pick and two runners-up backed by lab measurements and long-term reviews, each with a verified current price, retailer link, and date checked, and a citation on every key claim.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Should I get the Roborock or the Eufy robot vacuum? I have a dog that sheds a lot and mostly hardwood floors.",
+      "expected_output": "Clarifies which specific models are meant, then switches to a side-by-side comparison of the named products with a verdict, checks reliability and current model status for each, and cites every key claim.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "What's the best password manager for a small business? It's just me and maybe two contractors.",
+      "expected_output": "Recognizes this is software with no lab testing, falls back to specialist hands-on reviews, security audit and breach history, and owner reports, says so in 'About the evidence', and gives current per-user pricing with links.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "looking for a good standing desk",
+      "expected_output": "Asks one batch of the questions that would change the answer (budget, size, region, single or dual motor needs, weight on the desk) before searching, rather than guessing or asking across several turns.",
+      "files": []
+    }
+  ]
+}

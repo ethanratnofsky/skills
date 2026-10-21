@@ -1,0 +1,14 @@
+{
+  "name": "ethanratnofsky",
+  "description": "Ethan Ratnofsky's agent skills",
+  "owner": {
+    "name": "Ethan Ratnofsky"
+  },
+  "plugins": [
+    {
+      "name": "ethan-skills",
+      "source": "./",
+      "description": "Ethan Ratnofsky's agent skills, starting with evidence-based product research."
+    }
+  ]
+}
