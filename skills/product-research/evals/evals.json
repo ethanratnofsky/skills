@@ -5,25 +5,100 @@
       "id": 1,
       "prompt": "I fly a lot for work and want new noise-cancelling headphones. Over-ear, under $400.",
       "expected_output": "Asks one batch of questions only if needed (e.g. region, phone platform, call use), then gives a top pick and two runners-up backed by lab measurements and long-term reviews, each with a verified current price, retailer link, and date checked, and a citation on every key claim.",
-      "files": []
+      "files": [],
+      "expectations": [
+        "Any clarifying questions come in one batch, each with two to four answer options (one open-ended must-haves question is fine), a recommended option marked where one is a clear default, and a note that any question can be skipped or answered in the person's own words",
+        "Each pick's current price links to a retailer or manufacturer page and shows the date it was checked, and any other price mentioned (past sales, upgrades, other products) links to the page it came from",
+        "Every link in the replies is a page the run actually opened, not one seen only in search results or written from memory",
+        "Every key claim the recommendation rests on (test results, comfort or durability, reported failures, prices) has a source link right after it",
+        "Each recommended product, runners-up included, is backed by at least two independent sources from the strongest evidence tiers that exist for the category",
+        "An 'Also considered' section names notable products that weren't picked, each with a cited reason",
+        "The answer ends with an 'About the evidence' line naming which evidence tiers existed and any assumptions made, including defaults for any skipped questions",
+        "A comparison table covers every pick with weighted criteria (weights adding up to 100%), a 1–10 score per product per criterion with the cited result behind it, and a weighted total; the top pick has the highest total or the exception is explained",
+        "Each pick is confirmed as the current model, with any launched or announced successor mentioned, and any key source older than about 12 months is flagged with its year next to the claim",
+        "Numbers and specs in the answer match the pages they cite (grader spot-checks at least three)",
+        "Sources cover the same generation and version as the recommended products, test setups are described accurately, and caveats from quoted sources that affect this person aren't dropped",
+        "Every question the person skipped is covered by a stated default, and the final answer lists those defaults as assumptions",
+        "Format: one top pick and up to two runners-up, each runner-up labeled with the situation it's best for, with a reason given if there are fewer than two",
+        "Every pick costs under $400 at the linked retailer, or is clearly labeled as over budget",
+        "Addresses comfort over multi-hour wear (clamping force, weight, or fit with glasses) with a cited source",
+        "Any pick that is a refresh or rebadge of an older model addresses that older model's documented reliability problems"
+      ]
     },
     {
       "id": 2,
       "prompt": "Should I get the Roborock or the Eufy robot vacuum? I have a dog that sheds a lot and mostly hardwood floors.",
       "expected_output": "Clarifies which specific models are meant, then switches to a side-by-side comparison of the named products with a verdict, checks reliability and current model status for each, and cites every key claim.",
-      "files": []
+      "files": [],
+      "expectations": [
+        "Before recommending, asks which models or what budget the person means, since both brands sell many models",
+        "Any clarifying questions come in one batch, each with two to four answer options (one open-ended must-haves question is fine), a recommended option marked where one is a clear default, and a note that any question can be skipped or answered in the person's own words",
+        "Each pick's current price links to a retailer or manufacturer page and shows the date it was checked, and any other price mentioned (past sales, upgrades, other products) links to the page it came from",
+        "Every link in the replies is a page the run actually opened, not one seen only in search results or written from memory",
+        "Every key claim the recommendation rests on (test results, comfort or durability, reported failures, prices) has a source link right after it",
+        "Each recommended product, runners-up included, is backed by at least two independent sources from the strongest evidence tiers that exist for the category",
+        "An 'Also considered' section names notable products that weren't picked, each with a cited reason",
+        "The answer ends with an 'About the evidence' line naming which evidence tiers existed and any assumptions made, including defaults for any skipped questions",
+        "A comparison table covers every pick with weighted criteria (weights adding up to 100%), a 1–10 score per product per criterion with the cited result behind it, and a weighted total; the top pick has the highest total or the exception is explained",
+        "Each pick is confirmed as the current model, with any launched or announced successor mentioned, and any key source older than about 12 months is flagged with its year next to the claim",
+        "Numbers and specs in the answer match the pages they cite (grader spot-checks at least three)",
+        "Sources cover the same generation and version as the recommended products, test setups are described accurately, and caveats from quoted sources that affect this person aren't dropped",
+        "Every question the person skipped is covered by a stated default, and the final answer lists those defaults as assumptions",
+        "Format: gives a verdict, then compares specific current models from both Roborock and Eufy side by side",
+        "Both compared models fit the stated $600–800 budget at the linked price, or are clearly labeled as outside it",
+        "Addresses how each compared model handles long pet hair (tangling, pickup on hardwood) with a cited source",
+        "Checks reliability for both compared models with cited evidence"
+      ]
     },
     {
       "id": 3,
       "prompt": "What's the best password manager for a small business? It's just me and maybe two contractors.",
       "expected_output": "Recognizes this is software with no lab testing, falls back to specialist hands-on reviews, security audit and breach history, and owner reports, says so in 'About the evidence', and gives current per-user pricing with links.",
-      "files": []
+      "files": [],
+      "expectations": [
+        "Any clarifying questions come in one batch, each with two to four answer options (one open-ended must-haves question is fine), a recommended option marked where one is a clear default, and a note that any question can be skipped or answered in the person's own words",
+        "Each pick's current price links to a retailer or manufacturer page and shows the date it was checked, and any other price mentioned (past sales, upgrades, other products) links to the page it came from",
+        "Every link in the replies is a page the run actually opened, not one seen only in search results or written from memory",
+        "Every key claim the recommendation rests on (test results, comfort or durability, reported failures, prices) has a source link right after it",
+        "Each recommended product, runners-up included, is backed by at least two independent sources from the strongest evidence tiers that exist for the category",
+        "An 'Also considered' section names notable products that weren't picked, each with a cited reason",
+        "The answer ends with an 'About the evidence' line naming which evidence tiers existed and any assumptions made, including defaults for any skipped questions",
+        "A comparison table covers every pick with weighted criteria (weights adding up to 100%), a 1–10 score per product per criterion with the cited result behind it, and a weighted total; the top pick has the highest total or the exception is explained",
+        "Each pick is confirmed as the current model, with any launched or announced successor mentioned, and any key source older than about 12 months is flagged with its year next to the claim",
+        "Numbers and specs in the answer match the pages they cite (grader spot-checks at least three)",
+        "Sources cover the same generation and version as the recommended products, test setups are described accurately, and caveats from quoted sources that affect this person aren't dropped",
+        "Every question the person skipped is covered by a stated default, and the final answer lists those defaults as assumptions",
+        "Format: one top pick and up to two runners-up, each labeled with the situation it's best for, with a reason given if there are fewer than two",
+        "States which evidence tiers exist for business password managers and leans on hands-on reviews, security audits, and breach history",
+        "Cites the top pick's independent security audit or breach history in the top pick's own write-up",
+        "Gives current pricing for a team of three, linked to the vendor's own pricing page",
+        "Explains how the owner shares logins with contractors and revokes their access when a contract ends",
+        "Discloses known security incidents for every recommended product, not only for ruled-out ones"
+      ]
     },
     {
       "id": 4,
       "prompt": "looking for a good standing desk",
-      "expected_output": "Asks one batch of the questions that would change the answer (budget, size, region, single or dual motor needs, weight on the desk) before searching, rather than guessing or asking across several turns.",
-      "files": []
+      "expected_output": "Asks one batch of the questions that would change the answer (budget, size, region, single or dual motor needs, weight on the desk), each with options and a recommended default, before searching, rather than guessing or asking across several turns.",
+      "files": [],
+      "expectations": [
+        "Asks budget, country, what goes on the desk, and the user's height or desk size in one batch, before any searching or recommending",
+        "Any clarifying questions come in one batch, each with two to four answer options (one open-ended must-haves question is fine), a recommended option marked where one is a clear default, and a note that any question can be skipped or answered in the person's own words",
+        "Each pick's current price links to a retailer or manufacturer page and shows the date it was checked, and any other price mentioned (past sales, upgrades, other products) links to the page it came from",
+        "Every link in the replies is a page the run actually opened, not one seen only in search results or written from memory",
+        "Every key claim the recommendation rests on (test results, comfort or durability, reported failures, prices) has a source link right after it",
+        "Each recommended product, runners-up included, is backed by at least two independent sources from the strongest evidence tiers that exist for the category",
+        "An 'Also considered' section names notable products that weren't picked, each with a cited reason",
+        "The answer ends with an 'About the evidence' line naming which evidence tiers existed and any assumptions made, including defaults for any skipped questions",
+        "A comparison table covers every pick with weighted criteria (weights adding up to 100%), a 1–10 score per product per criterion with the cited result behind it, and a weighted total; the top pick has the highest total or the exception is explained",
+        "Each pick is confirmed as the current model, with any launched or announced successor mentioned, and any key source older than about 12 months is flagged with its year next to the claim",
+        "Numbers and specs in the answer match the pages they cite (grader spot-checks at least three)",
+        "Sources cover the same generation and version as the recommended products, test setups are described accurately, and caveats from quoted sources that affect this person aren't dropped",
+        "Every question the person skipped is covered by a stated default, and the final answer lists those defaults as assumptions",
+        "Format: one top pick and up to two runners-up (or a budget and a premium pick), each labeled with the situation it's best for, with a reason given if there are fewer than two",
+        "Every pick handles about 80 lb, reaches standing height for a 6'1\" person, and costs $700 or less at 60\" x 30\" at the linked price, or is clearly labeled as over budget",
+        "Addresses wobble at standing height with cited test results or long-term owner reports"
+      ]
     }
   ]
 }

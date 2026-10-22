@@ -46,6 +46,7 @@ Testing guides that buy and compare many products belong here. Affiliate links a
 - Published failure-rate data where it exists, such as Backblaze's hard drive statistics
 - Regulator complaint databases, such as the CFPB's for financial products
 - Patterns in Better Business Bureau complaints (the complaints themselves, not the letter grade)
+- For software and online services: breach and incident history, from the vendor's own security disclosures and from established security or tech news reporting
 
 **How to use them:** mainly for the reliability veto in step 5 of SKILL.md, and as a tie-breaker between close candidates.
 
@@ -67,6 +68,7 @@ Services (contractors, insurers, software subscriptions, local providers) and ma
 - Specialist reviewers who actually signed up for and used the service
 - Detailed owner and customer reports
 - Regulator complaint data
+- Independent security audits and breach history, for software that holds sensitive data
 - License and certification checks, for local trades
 - The terms that matter: contract length, cancellation rules, and price increases after promotional periods
 
